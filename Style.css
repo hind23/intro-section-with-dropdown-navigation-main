@@ -1,0 +1,360 @@
+@import url('https://fonts.google.com/specimen/Epilogue');
+body
+{
+    font-family: Epilogue;
+}
+nav
+{
+    padding: 20px;
+    
+}
+img
+{
+    display: inline;
+}
+ul
+{ list-style: none;
+margin: 0px;
+padding: 0px;
+}
+a 
+{
+    text-decoration: none;
+    color: black;
+}
+.box3
+{
+    display: none;
+}
+.navbar
+{
+    
+margin: 0px;
+display: flex;
+list-style: none;
+flex-direction: row;
+width: 50%;
+justify-content: space-between;
+}
+.navbar li
+{
+    cursor: pointer;
+}
+button
+{
+    cursor: pointer;
+}
+nav div
+{
+    display: inline;
+}
+#btn1
+{
+    background-color: transparent;
+    border: 0px;
+}
+#btn2
+{
+    margin-left: 30px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+#logo
+{
+    display:none;
+}
+span
+{
+display: flex;
+justify-content: flex-end;
+float: right;
+}
+.navbar .menu
+{
+    position: relative;
+}
+.navbar .menu .sub-menu
+{
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 130px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.35);
+    padding: 10px;
+    border-radius: 15px;
+}
+.navbar .menu .sub-menu li
+{
+    padding: 8px;
+}
+.navbar .menu .sub-menu li a
+{
+    margin-left: 20px;
+}
+
+.box1
+{
+    grid-area: boxone;
+padding: 40px;
+}
+.box2
+{
+    grid-area: boxtwo;  
+}
+h1
+{
+    font-size:70px;
+}
+#toggle1
+{
+    display: none;
+}
+#toggle2
+{
+    display: none;
+}
+.box2 img
+{
+    width: auto;
+    height: 80vh;
+    margin-top: 20px;
+}
+p
+{
+    opacity: 0.5;
+}
+.box1 button#btn2
+{
+    background-color: black;
+    color: white;
+}
+.box1 button#btn2:hover 
+{
+    background-color: transparent;
+    color: black;
+    transition: .8s;
+}
+
+.logos
+{
+    display:flex;
+    justify-content: space-around;
+}
+.logos img
+{
+    object-fit:cover;
+}
+@media screen and (min-width: 768px) 
+{
+
+    .container
+    {
+        display: grid;
+       grid-template-areas: 
+        "boxone  boxtwo"
+        /* "boxthree  boxtwo"
+        "boxfour  boxtwo"
+        "boxfive  boxtwo" */
+        
+        ;
+        grid-gap: 20px;
+    }
+}
+@media screen and (min-width: 1050px)  {
+    p
+    {
+        font-size: 1.8rem;
+    }  
+}
+@media (max-width:1050px) 
+{
+    p
+    {
+        font-size: 20px;
+    }
+   
+}
+@media (max-width:800px)  
+{
+    .navbar
+    {
+        width:70%;
+    }
+}
+@media (max-width: 900px) and (min-width: 768px)  {
+    .box2 img
+    {
+        width: auto;
+        height: 52vh;
+        margin-top: 20px;
+    }
+    .logos img
+    {
+        width: 50px;
+        height: auto;
+    }
+h1
+{
+    font-size: 50px;
+}
+p
+{
+    font-size: 18px;
+}
+}
+@media (max-width:768px) 
+{
+.movedown
+{
+    transform: translateY(200px);
+}
+.movedown2
+{
+    transform: translateY(150px);
+}
+#logo
+{ display:block;
+ padding:20px;
+}
+#toggle1
+{
+    display:block;
+    padding:20px;
+
+}
+h1
+{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p
+{ 
+     text-align: center;
+    font-size: 18px;
+}
+button#btn2
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.respo
+{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.box3
+{
+    display: block;
+}
+.box3 img
+{
+width: 50vw;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+.box2
+{ 
+    width:100%;
+    height:auto;
+    background-image: url('./images/image-hero-mobile.png');
+}
+
+.logos 
+{
+    display: block;
+}
+.logos img
+{
+    width: 13%;
+    margin-left: 10%;
+}
+.box2
+{
+    display: none;
+}
+#logo2
+{display: none;
+}
+ul 
+{
+    padding: 0px;
+}
+ul.navbar li
+{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.navbar
+{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+
+}
+.navbar .menu .sub-menu
+{
+    box-shadow: none;
+    width: 170px;
+    background-color: white;
+    left: 0px;
+}
+.navbar .menu .sub-menu li 
+{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.container
+{z-index: 0;
+}
+.respo
+{
+    float: right;
+}
+ nav 
+ {
+    float: right;
+    background-color: white;
+    height: 100%;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    right: 0px;
+    z-index: 1;
+ }
+ button#btn2 
+ {
+    display: none;
+ }
+ button#btn1 
+ {
+    display: none;
+ }
+ #toggle1
+ {
+     display: block;
+     cursor: pointer;
+ }
+ #toggle2
+ {
+     display: block;
+     cursor: pointer;
+
+ }
+ nav 
+ {
+    display: none;
+ }
+
+}
+/* 923 */
+/* - Mobile: 375px
+- Desktop: 1440px */
